@@ -1,69 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>TDMA</title>
-	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-
-	<script type="text/javascript">
-		$(document).ready(function(){
-			var nums = [20,5,8,9]
-			var i = 0
-			var int = setInterval(function(){
-				var iter = (i%4)
-
-				if ((i/4) < nums[iter]) {
-					$('.col').eq(iter).append('<div class="block b'+ iter +'"></div>')
-				}
-
-				i++
-			}, 500)
-			// $('.container').append('<div class="block red"></div>')
-		})
-		
-	</script>
-
-	<style type="text/css">
-		.container {
-			position: relative;
-			width: 500px;
-			height: 100vh;
-		}
-		.col {
-			display: inline-block;
-			text-align: center;
-			width: 20%;
-			height: 100%
-		}
-		.col:nth-child(2) > .col {
-			background-color: yellow;
-		}
-		.block {
-			display: block;
-			height: 20px;
-			width: 100%;
-			margin: 5px 0px;
-		}
-		.b0 {
-			background-color: red;
-		}
-		.b1 {
-			background-color: yellow;
-		}
-		.b2 {
-			background-color: green;
-		}
-		.b3 {
-			background-color: blue;
-		}
-	</style>
+	<title>Channel Partitioning</title>
 </head>
-
 <body>
-	<div class="container">
-		<div class="col"><p>A</p></div>
-		<div class="col"><p>B</p></div>
-		<div class="col"><p>C</p></div>
-		<div class="col"><p>D</p></div>
-	</div>
+	<h1>Channel Partitioning</h1>
+	<a href="tdma.html">TDMA</a>
+	<a href="fdma.html">FDMA</a>
+	<a href="cdma.html">CDMA</a>
 </body>
 </html>
